@@ -1,10 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
 });
-oute::get('/anggota', function () {
+Route::get('/anggota', function () {
     return view('ini anggota');
 });
+
+Route::get('dashboard', [DashboardController::class, 'index'])
+->name('dashboard');
