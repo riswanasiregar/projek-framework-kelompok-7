@@ -1,6 +1,6 @@
 @extends ('layouts.admin.app')
 
-@section('title', 'Tambah Warga')
+@section('title', 'Edit Warga')
 
 @section ('content')
         <div class="py-4">
@@ -109,12 +109,9 @@
                                     class="form-control"
                                     value="{{ old('email') }}">
                             </div>
-                            </div>
 
                             <!-- Telp -->
-                     <div class="row mb-4">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="mb-4">
+                            <div class="mb-3">
                                 <label for="telp" class="form-label">No. Telepon</label>
                                 <input
                                     type="text"
