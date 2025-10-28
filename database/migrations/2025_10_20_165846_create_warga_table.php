@@ -11,7 +11,7 @@ return new class extends Migration
      */
  public function up()
 {
-    Schema::create('warga', function (Blueprint $table) {
+      Schema::create('warga', function (Blueprint $table) {
         $table->increments('warga_id'); // warga_id (PK)
         $table->string('no_ktp', 16)->unique(); // no_ktp (UNQ) 
         $table->string('nama', 100); 

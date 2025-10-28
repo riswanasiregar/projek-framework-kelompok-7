@@ -8,6 +8,7 @@ use App\Http\Controllers\WargaController;
 
 
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ProgramBantuanController;
 
 
 Route::get('/', function () {
@@ -24,3 +25,5 @@ Route::get('dashboard',[DashboardController::class, 'index'])->name('dashboard')
 Route::resource('warga', WargaController::class);
 //crud users p7
 Route::resource('users', UsersController::class);
+//crud program bantuan
+Route::resource('program_bantuan', ProgramBantuanController::class);
